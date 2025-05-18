@@ -1,0 +1,173 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RedStore | Ecommerce Website Design Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="images/step-up-logo.png" alt="logo" width="125px"
+            /></a>
+          </div>
+
+          <nav>
+            <ul id="MenuItems">
+              <li><a class="menu" href="./index.html">Home</a></li>
+              <li><a class="menu" href="./products.html">Products</a></li>
+              <li><a class="menu" href="./about.html">About Us</a></li>
+              <li><a class="menu" href="">Contact Us</a></li>
+            </ul>
+          </nav>
+
+          <img src="images/cart.png" alt="cart logo" id="cart" />
+          <img src="images/menu.png" class="menu-icon" />
+        </div>
+
+        <div class="row"></div>
+      </div>
+    </div>
+
+    <section class="contact">
+      <h1 class="heading"><span>CONTACT</span> US</h1>
+
+      <form action="">
+        <div class="inputBox">
+          <div class="input">
+            <span>Your Name</span>
+            <input type="text" required placeholder="Enter Your Name" />
+          </div>
+
+          <div class="input">
+            <span>Your Number</span>
+            <input type="number" required placeholder="Enter Your Number" />
+          </div>
+          <div class="input">
+            <span>Your Email</span>
+            <input type="text" required placeholder="Enter Your Email" />
+          </div>
+          <div class="input">
+            <span>Phone Number</span>
+            <input type="text" required placeholder="Enter Your Phone no." />
+          </div>
+        </div>
+
+        <div class="inputBox">
+          <div class="input">
+            <span>Your Address</span>
+            <textarea
+              name=""
+              required
+              placeholder="Enter Your Address"
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <div class="input">
+            <span>Your Message</span>
+            <textarea
+              required
+              placeholder="Enter Your Message"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </div>
+
+        <input type="submit" value="Submit" class="btn" />
+      </form>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241.32659494179643!2d121.08512180734024!3d14.586221500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7fb5fb22c09%3A0xe34e9f0deedefda2!2s1063%20Bernal%20Street%2C%20Pasig%2C%201609%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1681811165084!5m2!1sen!2sph"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-------------footer---------->
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" />
+              <img src="images/app-store.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/step-up-logo.png" />
+            <p>
+              Our Purpose is to sustainably make the pleasure and benefits of
+              sports accessible to the many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Return Policy</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul class="links">
+              <li>
+                <a href="" target="_blank">Facebook</a>
+              </li>
+              <li>
+                <a href="" target="_blank">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Darryll Babar</p>
+      </div>
+    </div>
+
+    <!-- ---------------------Javascipt For Menu Toggle------------- -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
